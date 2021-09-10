@@ -6,16 +6,16 @@ function setup() {
   
    background(color(173, 216, 230));
   
-   for(var i = 0;i<1000;i++){
+   for(var i = 0;i<500;i++){
     rains[i] = {
       x : random(width),
-      y : random(250*10, 150),
+      y : random(155*10, 150),
       h : 10,
       
       display : function(){
         stroke(255);
-        strokeWeight(4);
-        line(this.x,this.y,this.x,this.y+10);
+        strokeWeight(10);
+        line(this.x,this.y,this.x,this.y+3);
       },
       move : function(){
         if(this.y>height) {
@@ -38,11 +38,11 @@ function draw() {
   
        //light green grass
    
-   strokeWeight(0);
+   strokeWeight(30);
    
-  fill(144, 238, 144);
+  fill("white");
   
-    rect(0,500,1800,1800);
+    rect(-100,500,1800,1800);
     
        //white clouds
        
@@ -66,7 +66,32 @@ function draw() {
     ellipse(1040,130,100,100);
     ellipse(1070,170,100,100);
     
+    //tree 
+    fill("brown");
+    rect(0,385,30,100);
+      rect(150,385,30,100);
+        rect(300,385,30,100);
+          rect(450,385,30,100);
+            rect(600,385,30,100);
+              rect(750,385,30,100);
+                rect(900,385,30,100);
+                  rect(1050,385,30,100);
+                    rect(1200,385,30,100);
+   
+   fill("green");
+                    
+    ellipse(10,385,100,100);
+     ellipse(165,385,100,100);
+      ellipse(315,385,100,100);
+       ellipse(465,385,100,100);
+        ellipse(615,385,100,100);
+         ellipse(765,385,100,100);
+          ellipse(915,385,100,100);
+           ellipse(1065,385,100,100);
+            ellipse(1215,385,100,100);
+   
     
     
-    
+{
+}
 }
